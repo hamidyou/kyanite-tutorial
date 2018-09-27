@@ -33,7 +33,7 @@ Kyanite.branch() takes 3 functions and a value, and will run either the 2nd or 3
 	- the second function, which runs if `fnCondition === false`
 	- return determined by function
 - value
-	- any data type
+	- `any` data type
 	- this is the data that is passed to fnCondition and then subsequently passed to fnTrue or fnFalse
 
 ## Examples
