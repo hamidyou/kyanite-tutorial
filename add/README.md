@@ -39,11 +39,3 @@ Curried Examples
     addFunction(3) // => 10
     
     addFunction(54) // => 61
-
- 
-
-  
-
-
-  
-
