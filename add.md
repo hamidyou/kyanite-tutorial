@@ -10,14 +10,14 @@ k.add(a, b) => a + b
 ## Parameters & Return
 
   - a
-  - number
-  - the first number to add
-    - b
+    - number
+    - the first number to add
+  - b
     - number
     - the second number to add
-      - Return
-      - number
-      - the sum of the numbers
+  - Return
+    - number
+    - the sum of the numbers
 
 ## Examples
 
