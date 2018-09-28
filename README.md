@@ -4,10 +4,7 @@ Created by @dhershman1, Kyanite.js is a light weight pure functional library wit
 
 ## Following along
 
-You are encouraged to follow along and practice test the examples and create your own. Clone or fork and open the .js file and run using node, just be sure to run
-
-    npm i kyanite
-to bring in the library. Just add a console.log and pass in any of the provided functions.
+You are encouraged to follow along and practice test the examples and create your own. Clone or fork and open the .js file and run using node. Just add a `console.log` and pass in any of the provided functions.
 
 ## More Info
 
