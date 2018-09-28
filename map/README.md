@@ -11,7 +11,7 @@
 
   
 
-Kyanite.concat() takes a function and applies it to all of the values within the provided list, and brings back a new list of the same type.
+Kyanite.map() takes a function and applies it to all of the values within the provided list, and brings back a new list of the same type.
 
   
 
