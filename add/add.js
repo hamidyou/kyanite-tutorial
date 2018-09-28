@@ -1,6 +1,6 @@
-const k = require('kyanite/dist/kyanite.js')
+const k = require('kyanite/dist/kyanite')
 
-//Examples
+// Examples
 
 k.add(1, 1) // => 2
 
@@ -8,7 +8,7 @@ k.add(1.5, 2.3) // => 3.8
 
 k.add(7, -5)
 
-//Curried Examples
+// Curried Examples
 
 const addFunction = k.add(7)
 

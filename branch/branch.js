@@ -1,3 +1,5 @@
+const k = require('kyanite/dist/kyanite')
+
 //Examples
 
 k.branch(
