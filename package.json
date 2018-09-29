@@ -1,0 +1,29 @@
+{
+  "name": "kyanite-tutorial",
+  "version": "0.1.0",
+  "description": "A tutorial for the Kyanite Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamidyou/kyanite-tutorial.git"
+  },
+  "keywords": [
+    "kyanite",
+    "tutorial",
+    "learn",
+    "library",
+    "functional"
+  ],
+  "author": "Youssef Hamid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hamidyou/kyanite-tutorial/issues"
+  },
+  "homepage": "https://github.com/hamidyou/kyanite-tutorial#readme",
+  "dependencies": {
+    "kyanite": "0.9.0"
+  }
+}
