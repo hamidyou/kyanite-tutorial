@@ -1,6 +1,6 @@
 # Kyanite.js Tutorial
 
-Created by @dhershman1, Kyanite.js is a light weight pure functional library with single type utility functions and it only depends on itself.
+Created by [dhershman1](https://github.com/dhershman1), Kyanite.js is a light weight pure functional library with single type utility functions and it only depends on itself.
 
 ## Following along
 
