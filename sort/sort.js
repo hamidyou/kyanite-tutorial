@@ -2,10 +2,6 @@ const k = require('kyanite/dist/kyanite')
 
 // Examples
 
-// const numArray = k.slice(2, process.argv.length, process.argv)
+k.sort((x, y) => x - y, [3, 4, 6, 5, 2, 1, 8, 9, 7]) // => [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-// console.log(numArray)
-
-// console.log(k.sort((a, b) => a - b, numArray))
-
-console.log(k.sort((a, b) => a - b, ['a', 'c', 'd', 'b']))
+k.sort((x, y) => y - x, [3, 4, 6, 5, 2, 1, 8, 9, 7]) // => [9, 8, 7, 6, 5, 4, 3, 2, 1]
