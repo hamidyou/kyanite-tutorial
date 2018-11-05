@@ -1,25 +1,12 @@
-
-  
-
 # Kyanite.filter()
 
-  
-
-  
-
 ## What does it do
-
-  
-
 Kyanite.filter() filters through a filterable data piece - `array` - using the provided function.
 
-  
-
 ## Syntax
-
-  
-
-    filter(fn, list) => new array
+```js
+filter(fn, list) => new array
+```
 
 ## Parameters & Return
 - fn
@@ -32,31 +19,29 @@ Kyanite.filter() filters through a filterable data piece - `array` - using the p
 - return
 	- new array list with only the elements that satisfy the conditions of fn
 	
-  
-
 ## Examples
 
 Examples
+```js
+k.filter(x => x > 1, [1,2,3]) // => [2,3]
 
-    k.filter(x => x > 1, [1,2,3]) // => [2,3]
-    
-    const divBy4 = x => k.rem(4,x) === 0
-    k.filter(divBy4, [2,4,6,8]) // => [4,8]
-    
-    const a = x => k.includes('a')
-    const animals = ['zebra', 'horse', 'cat', 'dog']
-    k.filter(a, animals) // => ['zebras', 'cats']
-  
+const divBy4 = x => k.rem(4,x) === 0
+k.filter(divBy4, [2,4,6,8]) // => [4,8]
+
+const a = x => k.includes('a')
+const animals = ['zebra', 'horse', 'cat', 'dog']
+k.filter(a, animals) // => ['zebras', 'cats']
+```
 
 Curried Examples
+```js
+const filterer = k.filter(x => x + 1 <= 2)
+filterer([1,2,3]) // => [1]
 
-    
-    const filterer = k.filter(x => x + 1 <= 2)
-    filterer([1,2,3]) // => [1]
-    
-    const doubleDigitSquare = k.filter(x => k.pow(2,x) >= 10)
-    doubleDigitSquare([2,4,6,8]) // => [4,6,8]
-    
-    const containsE = k.filter(x => k.includes('e', x))
-    const animals = ['zebra', 'horse', 'cat', 'dog']
-    containsE(animals) // => ['zebras', 'horses']
+const doubleDigitSquare = k.filter(x => k.pow(2,x) >= 10)
+doubleDigitSquare([2,4,6,8]) // => [4,6,8]
+
+const containsE = k.filter(x => k.includes('e', x))
+const animals = ['zebra', 'horse', 'cat', 'dog']
+containsE(animals) // => ['zebras', 'horses']
+```
