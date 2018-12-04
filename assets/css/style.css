@@ -1,0 +1,11 @@
+blockquote {
+  background-color: lightgrey;
+  border: 2px inset grey;
+  padding: .5rem;
+  width: max-content;
+}
+
+.param-return ul li {
+  margin: 2px 0;
+  padding: 2px 0;
+}
