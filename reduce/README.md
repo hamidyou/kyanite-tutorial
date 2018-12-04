@@ -9,10 +9,10 @@ reduce(fn, init, list)
 ```
 
 ## Parameters & Return
-- `fn(acc, n)`
+- `fn(n, acc)`
 	- function that takes 2 parameters
-		- `acc` is the accumulator
 		- `n` is the value being passed into the function (an element of the list)
+		- `acc` is the accumulator
 	- returns `any` data type as defined by the final function in the list
 - `init`
 	- initial value of the accumulator
@@ -28,7 +28,7 @@ reduce(fn, init, list)
 
 **Sum of an array of numbers**
 ```js
-k.reduce((acc, n) => acc + n, 0, [1,3,4,7]) // => 15
+k.reduce((n, acc) => acc + n, 0, [1,3,4,7]) // => 15
 ```
 
 - `acc` starts at 0.
@@ -40,7 +40,7 @@ k.reduce((acc, n) => acc + n, 0, [1,3,4,7]) // => 15
     
 **Using reduce to filter out items of a list**
 ```js
-k.reduce((acc, n) => { 
+k.reduce((n, acc) => { 
 	if (typeof n === 'number') { 
 		acc.push(n) 
 	} 
