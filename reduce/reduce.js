@@ -1,10 +1,10 @@
-const k = require('kyanite/dist/kyanite')
+const { add, reduce } = require('kyanite')
 
 // Examples
 
-k.reduce((acc, n) => acc + n, 0, [1, 3, 4, 7]) // => 15
+reduce(add, 0, [1, 3, 4, 7]) // => 15
 
-k.reduce((acc, n) => {
+reduce((acc, n) => {
   if (typeof n === 'number') {
     acc.push(n)
   }

@@ -1,4 +1,4 @@
-const { concat, map } = require('kyanite/dist/kyanite')
+const { concat, map } = require('kyanite')
 
 // Examples
 
