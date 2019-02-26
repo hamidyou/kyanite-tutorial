@@ -1,11 +1,9 @@
-const k = require('kyanite/dist/kyanite')
+const { concat, map } = require('kyanite')
 
 // Examples
 
-k.concat([[1, 2, 3], [4, 5, 6]]) // => [1, 2, 3, 4, 5, 6]
+console.log(concat([4, 5, 6], [1, 2, 3])) // => [1, 2, 3, 4, 5, 6]
 
-k.concat([1, 2, 3], 4) // => [1, 2, 3, 4]
+console.log(concat('ue', 'val')) // => 'value'
 
-k.concat([[1, 2], ['a', 'b', 'c'], 5]) // => [1, 2, 'a', 'b', 'c', 5]
-
-console.log(k.map(x => x + 's', 'hello'))
+console.log(map(concat('s'), 'hello')) // => ['hs', 'es', 'ls', 'ls', 'os']

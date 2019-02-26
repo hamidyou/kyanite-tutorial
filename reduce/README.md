@@ -1,11 +1,13 @@
 # Kyanite.reduce()
 
 ## What does it do
-Kyanite.reduce() accepts an array and runs a reduce based on the passed values
+`Kyanite.reduce()` accepts an array and runs a reduce based on the passed values
+
+It also acts as a transducer in part, and accepts a `reduced` function to short circuit the reduce loop.
 
 ## Syntax
 ```js
-reduce(fn, init, list) 
+reduce(fn, init, list)
 ```
 
 ## Parameters & Return
@@ -21,8 +23,8 @@ reduce(fn, init, list)
 	- data to run reduce against
 - return
 	- `any` data type as defined by `fn`
-	
-  
+
+
 
 ## Examples
 
@@ -37,14 +39,14 @@ k.reduce((n, acc) => acc + n, 0, [1,3,4,7]) // => 15
 - 4 is passed in as `n` and added to `acc`, `acc`= 8
 - 7 is passed in as `n` and added to `acc`, `acc`= 15
 
-    
+
 **Using reduce to filter out items of a list**
 ```js
-k.reduce((n, acc) => { 
-	if (typeof n === 'number') { 
-		acc.push(n) 
-	} 
-	return acc 
+k.reduce((n, acc) => {
+	if (typeof n === 'number') {
+		acc.push(n)
+	}
+	return acc
 }, [], ['', 1, 2, '0', 3]) // => [1, 2, 3]
 ```
 
