@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/hamidyou/kyanite-tutorial#readme",
   "dependencies": {
-    "kyanite": "0.11.2"
+    "kyanite": "^0.13.0"
   },
   "devDependencies": {
     "standard": "12.0.1"
